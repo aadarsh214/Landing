@@ -37,7 +37,6 @@ function App() {
       <Game />
       <Diff />
       <Sliders />
-      <Comm />
       <Globe />
       <People />
       <Video/>
