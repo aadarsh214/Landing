@@ -1,0 +1,75 @@
+.new {
+    overflow: hidden; /* Hide any content that overflows the body */
+}    
+
+.slider {
+    gap: 5%;
+    display: flex; /* Use flexbox for horizontal layout */
+    animation: slideImages linear infinite 10s; /* Adjust animation duration (10s) as needed */
+    margin-top: -38%;
+}
+
+.slider img {
+   
+    flex: 0 0 auto; /* Prevent images from resizing */
+    margin-right: 20px; /* Add margin to create space between images */
+}
+
+.Glow1 {
+    overflow: hidden; 
+    position: absolute;
+    top: -10%;
+    z-index: 2;
+    width: 110%;
+}
+
+
+@keyframes slideImages {
+    0% {
+        transform: translateX(0); /* Start from the initial position */
+    }
+    100% {
+        transform: translateX(-100%); /* Move towards the left to create the sliding effect */
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .new{
+        height: 10vh;
+    }
+
+
+    .slider {
+        flex-direction: row; /* Change to vertical layout on smaller screens */
+        align-items: center; /* Center items vertically */
+    }
+
+    .slider img {
+        margin-right: 0; /* Remove margin on smaller screens */
+        margin-bottom: 40rem; /* Add margin-bottom for vertical spacing */
+    }
+
+    .Glow1 {
+        left: 0; /* Reset left positioning */
+        width: 100%; /* Occupy full width on smaller screens */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .slider {
+        flex-direction: row; /* Change to vertical layout on smaller screens */
+        align-items: center; /* Center items vertically */
+    }
+
+    .slider img {
+        
+        margin-right: 0; /* Remove margin on smaller screens */
+        margin-bottom: 40rem; /* Add margin-bottom for vertical spacing */
+    }
+
+    .Glow1 {
+        left: 0; /* Reset left positioning */
+        width: 100%; /* Occupy full width on smaller screens */
+    }
+}

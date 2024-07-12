@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.dq{
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    height: 112vh;
+    display:grid;
+    justify-content: center;
+}
+
+.ji{
+    color: white;
+    position: absolute;
+    left: 40%;
+    margin-top: 5%;
+}
+
+.pw{
+    color: white;
+    font-size: 15px;
+    left: 35%;
+    margin-top: 10%;
+    font-weight: 400;
+    position: absolute;
+}
+
+.pk{
+    position: absolute;
+    display: grid;
+    align-items: center;
+    margin-left: 110rem;
+    margin-top: 20rem;
+    gap: 25px;
+}
+
+.vv {
+    position: absolute;
+    right: 67rem; /* Adjust position */
+    bottom: 15rem; /* Adjust position */
+    transform: scale(4.8); /* Increase the scale */
+}
+
+
+.ne{  
+    color: white;
+    position: relative;
+    left: 6rem ;
+    bottom: 7rem;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.cp{
+    color: white;
+    position: relative;
+    left: 8.5rem ;
+    bottom: 10rem;
+    font-size: 12px;
+}
+
+.cal{
+    display: grid;
+    justify-content: space-evenly;
+    position: relative;
+    top: -8.5rem;
+    left: 3%;
+}
+
+.webi{
+    position: relative;
+    color: white;
+    bottom: 13rem;
+    left: 9rem;
+    font-size: 20px;
+
+}
+
+.mr{
+    color: white;
+    position: relative;
+    left: 9rem ;
+    bottom: 14rem;
+    font-size: 12px;
+}
+
+.sim{
+    position: relative;
+    top: -11rem;
+    left: 2%;
+}
+
+.meet{
+    color: white;
+    position: relative;
+    left: 6rem ;
+    bottom: 18rem;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.with{
+    color: white;
+    position: relative;
+    left: 9rem ;
+    bottom: 21rem;
+    font-size: 12px;
+}
+
+.line {
+    position: relative;
+    width: 10px;
+    height: 10px;
+    color: red;
+    
+}
+
+.misho{
+    position: absolute;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.line{
+    width: 32rem; /* Width of circle */
+    height: 1.2px; /* Height of circle */
+    background-color: rgb(288,288,288,0.2);
+    display: inline-block;
+    margin-top: 10rem;
+    bottom: 11rem;
+    left: 2%;
+}
+
+.join{
+    z-index: 5000;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    left: 9rem;
+    top: 35rem; /* Initial position */
+    
+    border-radius: 5px;
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+}
+
+.channels{
+    z-index: 5000;
+}
+
+.baba{
+    z-index: 2000; 
+    color: black;
+}
+
+.uri{
+    width: 8vw;
+    height: 2.5vh;
+    font-size: 20px;
+    color: black;
+    left: 1px;
+    top: 5px;
+}

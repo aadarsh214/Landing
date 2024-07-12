@@ -1,0 +1,75 @@
+/* App.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+}
+
+.new {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.stick, .stick1 {
+    width: 2px;
+    height: 55%;
+    background:rgb(163, 240, 239);
+    position: absolute;
+    top: 15%;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+    box-shadow: 0 0 20px #00FFF9, -20px 20px 30px #00FFF9, -30px 30px 40px #00FFF9, 40px 40px 50px #00FFF9,
+                -50px 50px 60px #009591, -60px 60px 70px #009591, 0 0 80px #009591, 0 0 90px #009591;
+}
+
+.stick {
+    left: 50%;
+    animation-name: anime;
+}
+
+.stick1 {
+    left: 50%;
+}
+
+
+
+.fw {
+    position: absolute;
+    inset: 20%;
+    text-align: center;
+    font-size: 40px;
+    color: white;
+    font-weight: 600;
+    top: 28%;
+    opacity: 0; /* Initially hidden */
+    animation: fade 4.5s ease-in-out ;
+}
+
+.begin{
+    left: 1%;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 8px;
+    opacity: 0; /* Initially hidden */
+    animation: fade 4.5s ease-in-out ;
+}
+
+
+@keyframes fade {
+    0%, 20%, 100% {
+        opacity: 0;
+    }
+    21%, 70% {
+        opacity: 1;
+    }
+}

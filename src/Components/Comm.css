@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wh{
+   width: 100%;
+   height: 20vh;
+   background-color: #001415;
+}
+
+.image-container {
+    overflow: hidden; /* Hide overflow within the wrapper */
+    width: 100%; /* Ensure the width is set to contain the image */
+    height: 100%; /* Ensure the height is set to contain the image */
+  }
+  
+  .G1 {
+    position: relative;
+    right: 1%;
+    bottom: 45%;
+    z-index: 2;
+    /* Additional styles for glow effect */
+    filter: drop-shadow(0 -10px 10px rgba(255, 255, 255, 0.5)); /* Adjust the glow effect */
+  }
+  
+.gola {
+    position: relative;
+    width: 90px; /* Width of circle */
+    height: 90px; /* Height of circle */
+    border-radius: 50%; /* Makes divs circles */
+    background-color: rgba(128, 128, 128, 0.6); /* Background color */
+    border-radius: 50%;
+    left: 15%;
+    bottom: 11.2rem;
+}
+
+.bada {
+    position: relative;
+    font-size: 30px;
+    padding-left: 58%;
+    color: rgb(255, 255, 255);
+    margin-top: -14%;
+}
+
+.read{
+    position: relative;
+    left: 27.5%;
+    
+}
+
+.co{
+    position: absolute;
+    font-size: 12px;
+    color: rgb(255, 255, 255);
+    left: 27.5%;
+    font-weight: 700;
+    margin-top: 12px;
+}
+
+/* Your CSS file */
+.ll {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 10px;   
+    bottom: 30%;
+    margin-left: 42rem;
+    
+}
+
+
+.r {
+    padding: 10px 30px;
+    font-size: 12px;
+    font-weight: 700;
+    border-radius: 5px;
+    border: 1px solid white;
+    background-color: rgba(128, 128, 128, 0.1);
+    color: white;
+    cursor: pointer; /* Ensure cursor changes on hover */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for background color and text color */
+  }
+  
+  .d {
+    padding: 10px 20px;
+    font-size: 12px;
+    font-weight: 500;
+    border-radius: 5px;
+    border: none;
+    background-color: white;
+    color: #333; /* Dark text color */
+    cursor: pointer; /* Ensure cursor changes on hover */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for background color and text color */
+  }
+  
+  /* Hover and active states */
+  .r:hover {
+    background-color: rgba(128, 128, 128, 0.2); /* Lighten background on hover */
+    color: #fff; /* Change text color on hover */
+  }
+  
+  .d:hover {
+    background-color: #f0f0f0; /* Light gray background on hover */
+    color: #333; /* Darken text color on hover */
+  }
+  
+  

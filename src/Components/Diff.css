@@ -1,0 +1,170 @@
+.vc {
+    height: 120vh;
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.te {
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    margin-bottom: 50px;
+    left: 1.5rem;
+}
+
+
+.ot,.da {
+    position: relative;
+    margin-left: 200px; /* Adjust the space as needed */
+    font-size: 20px;
+    display: inline-block;
+    
+}
+
+
+.ot {
+    margin-bottom: 40px;
+    margin-right: 150px; /* This moves the text towards the right */
+    left: 22%; /* This property is not needed unless you are positioning absolutely */
+    font-weight: 400;
+}
+
+.da {
+    margin-bottom: 15px;
+    margin-right: 150px; /* This moves the text towards the right */
+    left: 16%; /* This property is not needed unless you are positioning absolutely */
+    font-weight: 400;
+}
+
+
+.comparison-table {
+    width: 80%;
+    height: 105vh;
+    color: #78F9FF;
+    background-color: rgb(128,128,128,0.3);
+    border: 1px solid white;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the table horizontally */
+    padding: 30px; /* Add padding to the table */
+    border-radius: 15px;
+}
+
+.dglow{
+    position: absolute;
+    width: 43.5%; 
+    border-radius: 15px;
+    left: 11%;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%; /* Make the rows take full width of the table */
+    margin-bottom: 10px;
+    align-items: center;
+}
+
+.row-item {
+    flex: 1;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.box{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 18px; 
+    border-radius: 20px;
+    border: 1px solid white;
+}
+
+.red {
+    width: 150px;
+    height: 40px;
+    background-color: rgb(204, 96, 96);  
+}
+
+.green {
+    width: 150px;
+    height: 40px;  
+    background-color: #51a2a6e7;
+}
+
+.cdd {
+    padding-top: 1%;
+}
+
+
+@media screen and (max-width: 768px) {
+    .te {
+        font-size: 30px; /* Adjust font size for small screens */
+    }
+
+    .da {
+        font-size: 16px; /* Adjust font size for small screens */
+        left: 10rem; /* Adjust margin for small screens */
+
+    }
+
+    .ot{
+        font-size: 16px; /* Adjust font size for small screens */
+        left: 4rem; /* Adjust margin for small screens */
+        
+    }
+
+
+    .comparison-table {
+        padding: 15px; /* Adjust padding for small screens */
+    }
+
+    .row {
+        margin-bottom: 2%;
+        flex-direction: column; /* Stack items vertically for small screens */
+    }
+
+    .row-item {
+        font-size: 12px; /* Adjust font size for small screens */
+    }
+
+    .box {
+        margin-top: 5%;
+        width: 80px;
+        height: 35px;
+        font-size: 18px; /* Adjust font size for small screens */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .te {
+        font-size: 25px; /* Adjust font size for extra small screens */
+    }
+
+    .ot, .da {
+        font-size: 14px; /* Adjust font size for extra small screens */
+    }
+
+    .comparison-table {
+        padding: 10px; /* Adjust padding for extra small screens */
+    }
+
+    .row-item {
+        font-size: 14px; /* Adjust font size for extra small screens */
+    }
+
+    .box {
+        width: 30px;
+        height: 30px;
+        font-size: 16px; /* Adjust font size for extra small screens */
+    }
+}

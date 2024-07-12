@@ -1,0 +1,39 @@
+.b1 {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Adjust the value to control the curve */ /* Allow items to wrap on smaller screens */
+    padding: 10px;
+    margin-top: 120px; /* Adjust the value to control the curve */
+  }
+
+.first{
+    padding: 30px;
+    color: rgb(255, 255, 255);
+    margin-bottom: 110rem;
+    padding-right: 105rem; 
+    font-size: 30px;
+}
+
+.second{
+    color: rgb(255, 255, 255);
+    margin-bottom: 110rem;
+    padding-left: 16rem;
+    font-size: 30px;
+    width: 50vw;
+}
+
+.third{
+    color: rgb(255, 255, 255);
+    margin-bottom: 111rem;
+    margin-left: 50rem;
+    font-size: 30px;
+}
+
+.fourth{
+    color: rgb(255, 255, 255);
+    margin-bottom: 111rem;
+    margin-left: 110rem;
+    font-size: 30px;
+}
+
+

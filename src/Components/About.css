@@ -1,0 +1,339 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+.cont {
+  background-color: rgb(0, 0, 0);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px; /* Adjust the value to control the curve */
+}
+
+.shagun{
+  position: absolute;
+  width: 20vw;
+  height: 40vh;
+  bottom: -65rem;
+  left: 10rem;
+  border-radius: 100%;
+}
+
+.shagunn{
+  position: absolute;
+  width: 20vw;
+  height: 45vh;
+  right: 1rem;
+  border-radius: 100%;
+  z-index: 5000;
+  object-fit: cover;
+}
+
+.sammu{
+  position: absolute;
+  margin-right: 10rem;
+  width: 23vw;
+  height: 70vh;
+  background-color: rgb(128, 128, 128,0.5);
+  bottom: -85rem;
+  border-radius: 25px;
+  text-wrap: wrap;
+}
+
+.mt{
+  position: relative;
+  left: 12rem;
+}
+
+.tm{
+  position: absolute;
+  margin-top: 2rem;
+  right: 15rem;
+  width: 20vw;
+  text-wrap: wrap;
+  text-align: start;
+}
+
+.tm ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+.tm li {
+  margin-bottom: 3em;
+}
+
+.sammu1{
+  position: absolute;
+  margin-left: 68rem;
+  width: 23vw;
+  height: 70vh;
+  background-color: rgb(128, 128, 128,0.5);
+  bottom: -85rem;
+  border-radius: 25px;
+  z-index: 7000;
+}
+
+.vg{
+  position: relative;
+  left: 4rem;
+  z-index: 5000;
+}
+
+.gv{
+  position: absolute;
+  margin-top: 1rem;
+  right: 6rem;
+  width: 20vw;
+  z-index: 4000;
+}
+
+.gv ul {
+  list-style-type: disc;
+  margin-left: 20px;
+  z-index: 4000;
+}
+
+.gv li {
+  margin-bottom: 0.5em;
+  z-index: 5000;
+}
+
+.text {
+  margin-bottom: 170rem;
+  margin-left: 5rem;
+  font-size: 40px; /* Increase the font size */
+  color: rgb(255, 255, 255); /* Change the color of the text */
+  text-align: center; /* Center the text horizontally */
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  width: 30vw;
+}
+
+.text1 {
+  margin-bottom: 120rem;
+  font-size: 20px; /* Increase the font size */
+  color: rgb(255, 255, 255); /* Change the color of the text */
+  text-align: center; /* Center the text horizontally */
+  width: 65%; /* Set the width to 33.33% to fit three lines */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  font-family: 'Inter', sans-serif; /* Use desired font family */
+  font-weight: normal;
+}
+
+.btnnn{
+  z-index: 8000;
+  position: absolute;
+  bottom: -115%;
+  left: 14%; 
+  transform: translateX(-50%);
+  width: 10%;
+  padding: 20px 50px;
+  background-color: transparent;
+  color: #000000;
+  border: 1px solid #fff;
+  border-radius: 21px;
+  cursor: pointer;
+  font-family: 'Open sans', sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  transition: background-color 0.3s ease;
+  background-color: rgba(255, 255, 255);
+}
+
+.btnnn:hover {
+  background-color: rgba(128, 128, 128, 0.9); /* Set background color with opacity */
+}
+
+.ttt{
+  z-index: 7000;
+}
+
+.vlcc{
+  z-index: 7000;
+}
+
+.kyaa{
+  z-index: 7000;
+  position: absolute;
+  font-size: 18px;
+  font-weight: 400;
+  left: 25%;
+  top: 15%;
+  color: #000000;
+}
+
+.glowis{
+  position: absolute;
+  top: 90rem;
+  left: 72.8rem;
+}
+
+/* For Large Screens */
+@media screen and (min-width: 1024px) {
+  .shagun, .shagunn {
+    width: 15vw;
+    height: 30vh;
+  }
+
+  .sammu, .sammu1 {
+    width: 20vw;
+    height: 60vh;
+  }
+
+  .tm, .gv {
+    width: 18vw;
+   
+  }
+
+  .gv {
+    width: 18vw;
+    font-size: 13px;
+    
+  }
+
+  .text {
+    font-size: 35px;
+    width: 25vw;
+  }
+
+  .text1 {
+    font-size: 18px;
+    width: 60%;
+  }
+
+  .btnnn {
+    width: 12%;
+    font-size: 16px;
+  }
+}
+
+/* For Mac Screens (typically around 1280px) */
+@media screen and (min-width: 1280px) and (max-width: 1440px) {
+  .shagun, .shagunn {
+    width: 18vw;
+    height: 35vh;
+  }
+
+  .sammu, .sammu1 {
+    width: 22vw;
+    height: 65vh;
+  }
+
+  .tm, .gv {
+    width: 19vw;
+  }
+
+  .text {
+    font-size: 38px;
+    width: 28vw;
+  }
+
+  .text1 {
+    font-size: 19px;
+    width: 62%;
+  }
+
+  .btnnn {
+    width: 11%;
+    font-size: 15px;
+  }
+}
+
+/* For Mobile Screens */
+@media screen and (max-width: 768px) {
+  .shagun, .shagunn {
+    width: 40vw;
+    height: 20vh;
+    bottom: -40rem;
+  }
+
+  .sammu, .sammu1 {
+    width: 80%;
+    height: auto;
+    bottom: -100rem;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  .mt, .vg {
+    left: 5%;
+  }
+
+  .tm, .gv {
+    width: 80%;
+    margin-left: 10%;
+  }
+
+  .tm ul, .gv ul {
+    margin-left: 10px;
+  }
+
+  .text {
+    font-size: 6vw;
+    width: 80%;
+    margin-left: 10%;
+  }
+
+  .text1 {
+    font-size: 4vw;
+    width: 90%;
+  }
+
+  .btnnn {
+    width: 50%;
+    font-size: 4vw;
+    bottom: -130%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+/* For Extra Small Mobile Screens */
+@media screen and (max-width: 480px) {
+  .shagun, .shagunn {
+    width: 60vw;
+    height: 25vh;
+    bottom: -45rem;
+  }
+
+  .sammu, .sammu1 {
+    width: 90%;
+    height: auto;
+    bottom: -110rem;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .mt, .vg {
+    left: 2%;
+  }
+
+  .tm, .gv {
+    width: 90%;
+    margin-left: 5%;
+  }
+
+  .tm ul, .gv ul {
+    margin-left: 5px;
+  }
+
+  .text {
+    font-size: 8vw;
+    width: 90%;
+    margin-left: 5%;
+  }
+
+  .text1 {
+    font-size: 5vw;
+    width: 95%;
+  }
+
+  .btnnn {
+    width: 60%;
+    font-size: 5vw;
+    bottom: -140%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}

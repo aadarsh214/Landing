@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .hhy {
+    position: relative;
+    background-color: rgb(0, 0, 0);
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .content-wrapper {
+    display: flex;
+    align-items: center;
+  }
+  
+  .people {
+    height: 50vh;
+    margin-right: 10%; 
+  }
+  
+  .form-container {
+    width: 500px;
+    height: 48vh;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+  }
+  
+  h1 {
+    color: white;
+    margin-bottom: 25px;
+    font-size: 36px;
+    position: relative;
+    left: -30.5%;
+  }
+  
+  span {
+    display: block;
+    font-size: 15px;
+    color: rgb(254, 254, 254);
+    margin-top: -20px; /* Adjust the margin to position the span just below the h1 */
+    width: 110%; /* Adjust width as needed */
+    position: relative;
+    margin-left: -12.5%;
+  }
+  
+  .form-group {
+    text-align: left;
+    margin-bottom: 35px;
+  }
+
+  
+  .form-group label {
+    color: white;
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .form-group input {
+    width: 125%;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+  }
+  
+  .button-group {
+    display: flex;
+    justify-content: start;
+    gap: 20px;
+  }
+  
+  .learn-more-btn, .sign-up-btn {
+    padding: 10px 30px;
+    font-size: 16px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .learn-more-btn {
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+  }
+  
+  .sign-up-btn {
+    background-color: #fff;
+    color: #000000;
+  }
+  
