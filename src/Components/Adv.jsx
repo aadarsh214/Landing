@@ -16,7 +16,7 @@ const Adv = () => {
         <div className='wow'>
         <p className='cust'>Customized</p>
         <p className='roadmap-text'>Roadmap</p>
-        <p className='your'>Your personalized guide to success, providing a tailored roadmap for your unique journey.</p>
+        <p className='your '>Your personalized guide to success, providing a tailored roadmap for your unique journey.</p>
         <div className='is'>
           <div className='ew'>
             <div className='scroll-container'>

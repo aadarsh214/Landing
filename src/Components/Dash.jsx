@@ -46,10 +46,10 @@ const Dash = () => {
  
   return (
     <div className="cont">
-      <p className='peon text-nowrap'>Elevate Your Career as a 
-      <span className="animated-text p-[28px] top-20">{currentTitle}</span> <br />with
-      <span className='mainn'> DataSense!</span>
+      <p className='peon text-nowrap py-48 '>Elevate Your Career as a 
+      <span className="animated-text p-[28px] top-20"></span> <br />with {currentTitle}
       </p>
+      
       <p className='small text-nowrap'>Empower  yourself with cutting-edge skills, network<br /> with industry experts, and ignite your data career<br /> journey.</p>
       <div className="image-container">
       <img src={bgimage} alt="shape" className="bgimage" />
