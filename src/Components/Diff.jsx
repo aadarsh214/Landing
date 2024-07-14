@@ -5,7 +5,7 @@ import dglow from './dglow.png';
 const Diff = () => {
     const features = [
         { name: "Gamification Learning", others: false, datasense: true},
-        { name: "200+ Practice Questions", others: false, datasense: true },
+        { name: "20000+ Practice Questions", others: false, datasense: true },
         { name: "Full Length Courses", others: true, datasense: true },
         { name: "Guided Format", others: false, datasense: true },
         { name: "Data Analystics Focused", others: true, datasense: true },

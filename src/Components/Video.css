@@ -3,10 +3,7 @@
     padding: 0;
 }
 
-.dupli {
-    background-color: rgb(0, 0, 0);
-    height: 115vh;
-}
+
 
 .hell {
     height: 110vh;
@@ -39,7 +36,7 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 68px; 
+    width: 88px; 
     height: 70px;
     transform: translate(-50%, -50%);
     cursor: pointer;
@@ -113,8 +110,8 @@
 
 .copy {
     position: absolute;
-    width: 35%;
-    height: 75vh;
+    width: 155%;
+    height: 85vh;
     margin: 10rem;
     display: flex;
     flex-direction: column;

@@ -36,56 +36,16 @@ const Video = () => {
                   <img src={playbtn} alt="Play" className='play-btn' />
                 </div>
               ) : (
-                <iframe
-                  width="560"
-                  height="315"
-                  src={`https://www.youtube.com/embed/8W5DgDvyalc?autoplay=1`}
-                  frameBorder="0"
-                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                  title="YouTube Video 1"
-                  className='datavideo'
-                ></iframe>
+                <iframe width="500" height="400" src="https://www.youtube.com/embed/0O0jrTUg3UM?si=kmDACQGifhjq3D2H" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
               )}
               <h1 className='exc'>Exciting announcement: We are launching a new course on Machine learning!
                 <span className='emo'>❤️ 📢</span>
               </h1>
             </div>
           </div> 
-
-          {/* Video 2 */}
-          <div className='dimag'>
-            <div className='gol'></div>
-            <h1 className='daw'>DataAnalytics101 
-              <span className='mki'>2 hours ago</span>
-              <span className='bai'>...</span>
-            </h1>
-            <div className='middle' onClick={() => handlePlayClick(2)}>
-              {!video2Visible ? (
-                <div className='thumbnail-container'>
-                  <img src={`https://img.youtube.com/vi/Wm0xGZO-7kM/0.jpg`} alt="Thumbnail" className='thumbnail' />
-                  <img src={playbtn} alt="Play" className='play-btn' />
-                </div>
-              ) : (
-                <iframe
-                  width="560"
-                  height="315"
-                  src={`https://www.youtube.com/embed/Wm0xGZO-7kM?autoplay=1`}
-                  frameBorder="0"
-                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                  title="YouTube Video 2"
-                  className='datavideo'
-                ></iframe>
-              )}
-              <h1 className='exc'>Exciting announcement: We are launching a new course on Machine learning!
-                <span className='emo'>❤️ 📢</span>
-              </h1>
             </div>
           </div>
         </div>   
-      </div>
-    </div>
   );
 };
 

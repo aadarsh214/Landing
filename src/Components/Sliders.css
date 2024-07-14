@@ -31,8 +31,8 @@ body {
   font-size: 3.8rem;
   color: white;
   text-align: center;
-  position: relative; /* Make sure the position is relative */
-  top: -15rem; /* Adjust the value to move the text upwards */
+  position: relative;
+  top: -15rem;
   font-family: 'Roboto', sans-serif;
   left: 1rem;
   z-index: 1000;
@@ -44,7 +44,7 @@ body {
   top: 13%;
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
-  left: 65rem;
+  left: 59rem;
   text-align: center;
   position: absolute;
   z-index: 1000;
@@ -58,28 +58,88 @@ body {
   color: rgb(0, 0, 0);
   background-color: #ffffff;
   border: none;
-  padding: 10px;
-  padding-right: 25px;
-  margin-bottom: 17px;
+  padding: 10px 25px 10px 10px;
+  margin-bottom: 0;
   border-radius: 30px;
   cursor: pointer;
   transition: background-color 0.3s ease;
-  left: 61rem;
-  position: relative; /* Make sure the position is relative */
+  left: 55rem;
+  position: relative;
   top: -90px;
   z-index: 1000;
 }
 
 .read-more-btn:hover {
-  background-color: #e1dcdc; /* Slightly darker shade of primary color */
+  background-color: #e1dcdc;
 }
 
 .read-more-btn .arrow {
   color: black;
-  margin-left: 3rem; /* Adjust the value to increase space */
+  margin-left: 3rem;
   top: -9px;
 }
 
+/* Media Queries */
+@media screen and (max-width: 1024px) {
+  .su {
+    font-size: 3rem;
+    top: -10rem;
+  }
+  
+  .he {
+    font-size: 1.2rem;
+    left: 30rem;
+  }
+  
+  .read-more-btn {
+    width: 12rem;
+    font-size: 1.4rem;
+    left: 40rem;
+    top: -70px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .su {
+    font-size: 2.5rem;
+    top: -8rem;
+    left: 0;
+  }
+  
+  .he {
+    font-size: 1rem;
+    left: 10rem;
+    right: 5rem;
+    top: 10%;
+  }
+  
+  .read-more-btn {
+    width: 10rem;
+    font-size: 1.2rem;
+    left: 20rem;
+    top: -50px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .su {
+    font-size: 2rem;
+    top: -5rem;
+  }
+  
+  .he {
+    font-size: 0.9rem;
+    left: 5rem;
+    top: 8%;
+  }
+  
+  .read-more-btn {
+    width: 8rem;
+    font-size: 1rem;
+    left: 5rem;
+    top: -30px;
+  }
+}
 .container {
   max-width: 120rem;
   padding: 4rem 1rem;
@@ -193,7 +253,7 @@ body {
 
 .backing { 
   width: 100%;
-  height: 100%; /* Make the video take up the full height of the container */
+   /* Make the video take up the full height of the container */
 }
 
 /* Responsive styling */
@@ -206,18 +266,18 @@ body {
 
   .he {
     font-size: 1.3rem;
-    left: 50rem;
+    left: 41rem;
   }
 
   .read-more-btn {
-    font-size: 1.4rem;
-    padding: 0.8rem 3rem;
-    left: 50rem;
+    font-size: 2rem;
+    padding: 12px 0.8rem 3rem;
+    left: 39rem;
     top: -7rem;
   }
 
   .read-more-btn .arrow {
-    margin-left: 4rem;
+    margin-left: 7rem;
   }
 
   .carousel {

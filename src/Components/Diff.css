@@ -1,5 +1,5 @@
-.vc {
-    height: 120vh;
+ .vc {
+    height: 100%;
     background-color: rgb(0, 0, 0);
     text-align: center;
     padding: 20px;
@@ -35,15 +35,14 @@
 .da {
     margin-bottom: 15px;
     margin-right: 150px; /* This moves the text towards the right */
-    left: 16%; /* This property is not needed unless you are positioning absolutely */
+    left: 13%; /* This property is not needed unless you are positioning absolutely */
     font-weight: 400;
 }
 
 
 .comparison-table {
     width: 80%;
-    height: 105vh;
-    color: #78F9FF;
+    color: #ffffff;
     background-color: rgb(128,128,128,0.3);
     border: 1px solid white;
     display: flex;
@@ -55,7 +54,7 @@
 
 .dglow{
     position: absolute;
-    width: 43.5%; 
+    width: 48.5%; 
     border-radius: 15px;
     left: 11%;
 }
@@ -64,7 +63,7 @@
     display: flex;
     justify-content: space-between;
     width: 100%; /* Make the rows take full width of the table */
-    margin-bottom: 10px;
+    margin-bottom: 8px;
     align-items: center;
 }
 
@@ -166,5 +165,130 @@
         width: 30px;
         height: 30px;
         font-size: 16px; /* Adjust font size for extra small screens */
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .te {
+        font-size: 35px;
+    }
+
+    .ot, .da {
+        font-size: 18px;
+        margin-right: 100px;
+    }
+
+    .comparison-table {
+        width: 90%;
+    }
+
+    .box {
+        width: 45px;
+        height: 45px;
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .te {
+        font-size: 32px;
+    }
+
+    .ot, .da {
+        font-size: 16px;
+        margin-right: 80px;
+    }
+
+    .comparison-table {
+        width: 95%;
+        padding: 20px;
+    }
+
+    .box {
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .vc {
+        padding: 15px;
+    }
+
+    .te {
+        font-size: 28px;
+        margin-bottom: 30px;
+    }
+
+    .ot, .da {
+        font-size: 14px;
+        margin-right: 60px;
+        margin-bottom: 15px;
+    }
+
+    .comparison-table {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .row {
+        flex-direction: column;
+        margin-bottom: 15px;
+    }
+
+    .row-item {
+        width: 100%;
+        justify-content: space-between;
+        margin-bottom: 10px;
+    }
+
+    .box {
+        width: 35px;
+        height: 35px;
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    .red, .green {
+        width: 120px;
+        height: 35px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .vc {
+        padding: 10px;
+    }
+
+    .te {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    .ot, .da {
+        font-size: 12px;
+        margin-right: 40px;
+        margin-bottom: 10px;
+    }
+
+    .comparison-table {
+        padding: 10px;
+    }
+
+    .row-item {
+        font-size: 12px;
+    }
+
+    .box {
+        width: 30px;
+        height: 30px;
+        font-size: 16px;
+        margin-bottom: 8px;
+    }
+
+    .red, .green {
+        width: 100px;
+        height: 30px;
     }
 }

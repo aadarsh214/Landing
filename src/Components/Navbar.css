@@ -3,16 +3,24 @@ body {
   font-family: Arial, sans-serif;
   background-color: #000;
 }
- 
+
 .navbar {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: rgba(63, 63, 63, 0.7);
-  padding: 10px 5px;
-  position: relative;
+  background-color: rgba(10, 10, 10, 0.3);
+  backdrop-filter: blur(5px);
+  padding: 10px 20px;
+  position: fixed;
   top: 0;
+  left: 0;
+  right: 0;
   z-index: 6000;
+  transition: all 0.3s ease;
+}
+
+.navbar:hover {
+  background-color: rgba(24, 149, 160, 0.5);
 }
 
 .menu-toggle {
@@ -20,6 +28,11 @@ body {
   font-size: 24px;
   cursor: pointer;
   color: #ffffff;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
 }
 
 .nav-links.active {
@@ -31,6 +44,11 @@ body {
   color: #ffffff;
   text-decoration: none;
   margin: 0 15px;
+  transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+  color: #f0f0f0;
 }
 
 .navbar .logo {
@@ -49,27 +67,27 @@ body {
 }
 
 .navbar .right-buttons a {
-  padding: 5px 15px;
-  border-radius: 15px;
+  padding: 8px 20px;
+  border-radius: 20px;
   cursor: pointer;
+  transition: all 0.3s ease;
 }
 
 .navbar .right-buttons .login {
-  background-color: transparent;
-  border: 1px solid #555;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
   color: #ffffff;
 }
 
-.navbar .right-buttons .signup {
-  background-color: #555;
-  border: 1px solid #555;
-  color: #ffffff;
-}
-
+.navbar .right-buttons .signup,
 .navbar .right-buttons .logout {
-  background-color: #555;
-  border: 1px solid #555;
+  background-color: rgba(85, 85, 85, 0.5);
+  border: 1px solid rgba(85, 85, 85, 0.2);
   color: #ffffff;
+}
+
+.navbar .right-buttons a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
 .dropdown {
@@ -80,11 +98,15 @@ body {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(10px);
   min-width: 250px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.1);
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
   border-radius: 10px;
+  overflow: hidden;
+  top: 100%;
+  left: 0;
 }
 
 .dropdown-content a {
@@ -92,10 +114,11 @@ body {
   padding: 12px 16px;
   text-decoration: none;
   display: block;
+  transition: background-color 0.3s ease;
 }
 
 .dropdown-content a:hover {
-  background-color: #444;
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 .dropdown:hover .dropdown-content {
@@ -106,14 +129,64 @@ body {
   cursor: pointer;
 }
 
-.user-name{
-  position: relative;
-  margin-top: 2px;
-  left: 18%;
+.user-name {
+  color: #ffffff;
+  margin-right: 15px;
 }
 
-.logout{
-  position: relative;
-  width: 10vw;
-  margin-bottom: 1px;
+.logout {
+  width: auto;
+  white-space: nowrap;
+}
+
+@media screen and (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    background-color: rgba(63, 63, 63, 0.9);
+    backdrop-filter: blur(10px);
+    padding: 20px;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .navbar a {
+    margin: 10px 0;
+  }
+
+  .dropdown-content {
+    position: static;
+    background: none;
+    box-shadow: none;
+  }
+
+  .right-buttons {
+    margin-top: 20px;
+  }
+
+  .navbar .right-buttons a {
+    margin: 10px 0;
+  }
+
+  .user-name {
+    position: static;
+    margin-top: 0;
+    left: 0;
+  }
+
+  .logout {
+    position: static;
+    width: auto;
+    margin-bottom: 0;
+  }
 }
